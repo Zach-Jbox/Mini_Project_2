@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <title>
+        Mini Project 1
+    </title>
+    <link rel="stylesheet" type="text/css" href="../static/css/prediction.css">
+</head>
+<body>
+    
+    <h1>Predictions</h1>
+
+    <form method="post" action="/reading">
+        <label for="new_data1">Please input your first data point:</label><br>
+        <input type="text" id="new_data1" name="new_data1"><br>
+
+        <br>
+
+        <label for="new_data2">Please input your second data point:</label><br>
+        <input type="text" id="new_data2" name="new_data2"><br>
+
+        <br>
+        
+        <input type="submit" value="Submit"><br>
+    </form>
+
+    <br>
+    <p>{{ final_prediction }}</p>
+
+    <form method="get" action="/">
+        <button onclick="window.location.href = 'home_page.html';">Home</button>
+    </form>
+
+    <footer>
+    <p>INFO 6160</p>
+    </footer>
+</body>
+</html>
